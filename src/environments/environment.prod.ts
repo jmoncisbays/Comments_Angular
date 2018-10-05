@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+    production: true,
+    webapiUrl: "http://localhost:57981"
 };

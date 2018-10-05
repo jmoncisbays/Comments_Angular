@@ -1,0 +1,11 @@
+<h1>
+    Comments
+</h1>
+<hr>
+<div class="comment" *ngFor="let c of comments">
+    <label><i>"{{ c.value }}"</i></label>
+</div>
+<form #commentForm="ngForm" (ngSubmit)="submmitComment()" autocomplete="Off">
+    <textarea rows="4" #comment="ngModel" id="comment" name="comment" [(ngModel)]="model.value" placeholder="Add a comment..."></textarea><br>
+    <button type="submit">Submit Comment</button>
+</form>
